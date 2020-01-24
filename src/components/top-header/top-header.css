@@ -1,8 +1,9 @@
-.top-header{
-  /* background-color: blueviolet; */
-  background-color: #755A87;
-  height:50px;
-  color:white;
+.top-header {
+  background-color: #755a87;
+  height: 50px;
+}
+.top-header a {
+  color: white;
 }
 
 .navbar-brand-section img {
