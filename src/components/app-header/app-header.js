@@ -8,6 +8,7 @@ class AppHeader extends Component {
   };
 
   toggleCollapse = () => {
+    console.log("toggleCollapse");
     this.setState({ isOpen: !this.state.isOpen });
   };
 
@@ -18,7 +19,7 @@ class AppHeader extends Component {
           <div className="navbar-brand-section align-items-center">
             <img src={logo} className="col"></img>
             <a className="navbar-brand col" href="#">
-             <span>Project Carré</span> 
+              <span>Project Carré</span>
             </a>
           </div>
           <button
@@ -32,24 +33,29 @@ class AppHeader extends Component {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Home
+                  accueil
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  About
+                  domaines d'activite
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Services
+                  services
                 </a>
               </li>
               <li className="nav-item">
+                <a className="nav-link" href="#">
+                  portfolio
+                </a>
+              </li>
+              {/* <li className="nav-item">
                 <a className="nav-link" href="#">
                   Contact
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

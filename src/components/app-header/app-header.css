@@ -10,3 +10,20 @@
   font-size: 1.2rem;
   color: grey;
 }
+
+.navbar-brand-section img {
+  width: auto;
+}
+.nav-item .nav-link {
+  text-transform: uppercase;
+}
+
+/* .navbar-brand-section a {
+  font-family: "Proza Libre";
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0px;
+  color: rgb(0, 0, 0);
+  vertical-align: middle;
+  justify-content: flex-start;
+} */

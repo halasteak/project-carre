@@ -6,6 +6,8 @@
   color: white;
 }
 
-.navbar-brand-section img {
-  width: auto;
+
+.nav-icon{
+  vertical-align: middle;
+  padding-bottom: 4px;
 }
