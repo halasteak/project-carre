@@ -16,7 +16,8 @@ const TopHeader = () => {
               <span className="nav-link">
                 <a href="tel:+33752230282">
                   <embed src={phoneIcon}  className="nav-icon"/>
-                  <span> 0752230282</span>
+                  &nbsp;
+                  <span>0752230282</span>
                 </a>
               </span>
             </li>
@@ -24,7 +25,8 @@ const TopHeader = () => {
               <span className="nav-link">
                 <a href="mailTo:projetcarre2020@gmail.com">
                   <embed src={emailIcon}  className="nav-icon"/>
-                  <span> projetcarre2020@gmail.com</span>
+                   &nbsp;
+                  <span>projetcarre2020@gmail.com</span>
                 </a>
               </span>
             </li>
