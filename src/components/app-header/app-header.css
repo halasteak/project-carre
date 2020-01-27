@@ -1,17 +1,27 @@
 .navbar-brand-section img {
   width: auto;
 }
-.nav-items-link a,
-.nav-item .nav-link {
+.nav-items-link a {
   text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 15px;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 575px) {
+  .nav-items-link a {
+    border-bottom: 1px solid black;
+  }
+}
 
-.navbar-light .navbar-text
-{
+.navbar-light .navbar-text {
   color: rgb(0, 0, 0);
 }
-
 
 .navbar-brand-section span,
 .navbar-brand-section a {
@@ -22,5 +32,13 @@
   color: rgb(0, 0, 0);
   vertical-align: middle;
   justify-content: flex-start;
-  
+}
+
+.nav-link:hover
+{
+  color: #755a87!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
 }
