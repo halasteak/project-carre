@@ -7,7 +7,7 @@ import { faPhoneAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const TopHeader = () => {
   return (
-    <nav className="navbar navbar-expand  d-none d-sm-block top-header">
+    <nav className="navbar navbar-expand d-none d-sm-block top-header">
       <div className="row">
         <div className="col-1"></div>
         <div className=" col-9">
