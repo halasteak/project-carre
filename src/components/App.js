@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AppHeader from "./app-header";
 import ReactGA from "react-ga";
 // import auth from "./auth.ts"; // Sample authentication provider
+import AppCarousel from "../components/app-carousel"
 
 const trackingId = "UA-157135052-1";
 ReactGA.initialize(trackingId);
@@ -16,6 +17,7 @@ const App = () => {
     <Fragment>
       <TopHeader></TopHeader>
       <AppHeader></AppHeader>
+      <AppCarousel></AppCarousel>
     </Fragment>
   );
 };

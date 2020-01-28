@@ -1,0 +1,23 @@
+.carousel-caption .first {
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.carousel-caption .second{
+    position: absolute;
+    right: 65%;
+    bottom: 80px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: darksalmon;
+    text-align: center;
+    background-color: white;
+    border-radius: 100px;
+    }
