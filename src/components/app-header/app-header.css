@@ -1,3 +1,7 @@
+:root {
+  --color-violet: #755a87;
+}
+
 .navbar-brand-section img {
   width: auto;
 }
@@ -15,13 +19,19 @@
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 575px) {
   .nav-items-link a {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--color-violet);
   }
+
+  .nav-items-link a:hover {
+    background-color: var(--color-violet);
+    color: white!important;
+   }
 }
 
-.navbar-light .navbar-text {
+
+/* .navbar-light .navbar-text {
   color: rgb(0, 0, 0);
-}
+} */
 
 .navbar-brand-section span,
 .navbar-brand-section a {
@@ -36,7 +46,7 @@
 
 .nav-link:hover
 {
-  color: #755a87!important;
+  color: var(--color-violet)!important;
 }
 
 .navbar-light .navbar-nav .nav-link {
