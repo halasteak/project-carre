@@ -7,7 +7,7 @@ import ReactGA from "react-ga";
 import AppCarousel from "../components/app-carousel";
 import DomainDActivite from "./domain-d-activite";
 
-const trackingId = "UA-157135052-1";
+const trackingId = "UA-157881157-1";
 
 // ReactGA.set({
 //   userId: auth.currentUserId()
@@ -16,6 +16,7 @@ const trackingId = "UA-157135052-1";
 const App = () => {
   try {
     ReactGA.initialize(trackingId);
+    ReactGA.pageview('/homepage');
     console.log("ini ga with id ", trackingId);
   } catch (e) {
     console.error("init analytics error", e);
