@@ -7,10 +7,28 @@
   text-align: center;
   border-bottom: 1px solid #000;
   line-height: 0.1em;
-  margin: 10px 0 20px;
+  margin: 60px 0px -10px;
 }
 .domains-d-activite .content h1 span {
   background: #fff;
   padding: 0 10px;
+  font-family: "Proza Libre";
+  font-weight: 700;
 
+}
+
+#explore-section span {
+  font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0px;
+    align-items: normal;
+    color: black;
+}
+.explore-img {
+  margin-right: 10px;
+}
+.explore-text {
+  margin-left:10px
 }

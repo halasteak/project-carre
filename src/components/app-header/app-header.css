@@ -4,7 +4,15 @@
 
 .navbar-brand-section img {
   width: auto;
+  margin-top: 10px;
 }
+
+.navbar-light .navbar-text {
+  color: black;
+  margin-top: -20px;
+  margin-left: 16px;
+}
+
 .nav-items-link a {
   text-transform: uppercase;
   text-align: center;
