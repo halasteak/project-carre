@@ -1,0 +1,43 @@
+.services {
+  border: 1px solid gray;
+  background-color: #dedcdc;
+  min-height: 500px;
+}
+
+.services .content h1 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 60px 0px -10px;
+}
+.services .content h1 span {
+  background: #dedcdc;
+  padding: 0 10px;
+  font-family: "Proza Libre";
+  font-weight: 700;
+}
+
+.services-header {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: rgb(0, 0, 0);
+  vertical-align: middle;
+  justify-content: flex-start;
+  /* width: 821px; */
+  transform: translate(0px, -2.8px);
+  line-height: 30px;
+  /* height: 104px;
+  left: 319px;
+  top: 1655px; */
+}
+.services-top-container {
+  text-align: center;
+}
+
+
+#boxes img{
+  background-color: none;
+}

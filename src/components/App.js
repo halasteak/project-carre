@@ -6,6 +6,7 @@ import ReactGA from "react-ga";
 // import auth from "./auth.ts"; // Sample authentication provider
 import AppCarousel from "../components/app-carousel";
 import DomainDActivite from "./domain-d-activite";
+import Services from "./services/services";
 
 const trackingId = "UA-157881157-1";
 
@@ -27,6 +28,7 @@ const App = () => {
       <AppHeader></AppHeader>
       <AppCarousel></AppCarousel>
       <DomainDActivite></DomainDActivite>
+      <Services></Services>
     </Fragment>
   );
 };
