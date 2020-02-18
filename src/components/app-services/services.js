@@ -3,10 +3,13 @@ import "./services.css";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import ListGroupItem from "react-bootstrap/ListGroupItem";
-import IconConception from "./../../img/services/Icon_Conception.svg";
-import IconDessin from "./../../img/services/Icon_Dessin.svg";
-import IconTravaux from "./../../img/services/Icon_Travaux.svg";
-import IconExterior from "./../../img/services/Icon_Exterior.svg";
+import ServiceItems from "./ServiceItems"
+import IconConception from "./../../img/app-services/Icon_Conception.svg";
+import IconDessin from "./../../img/app-services/Icon_Dessin.svg";
+import IconTravaux from "./../../img/app-services/Icon_Travaux.svg";
+import IconExterior from "./../../img/app-services/Icon_Exterior.svg";
+
+
 class Services extends Component {
   state = {};
   render() {
@@ -38,7 +41,10 @@ class Services extends Component {
           </div>
         </div>
         {/* BOXES  */}
-        <section id="boxes" className="py-5">
+        
+        <ServiceItems></ServiceItems>
+        {/* BOXES  */}
+        {/* <section id="boxes" className="py-5">
           <div className="container ">
             <div className="row">
               <div className="col-md-3">
@@ -75,7 +81,7 @@ class Services extends Component {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     );
   }
