@@ -7,6 +7,7 @@ import ReactGA from "react-ga";
 import AppCarousel from "../components/app-carousel";
 import DomainDActivite from "./domain-d-activite";
 import Services from "./app-services";
+import Portfolio from "./portfolio";
 
 const trackingId = "UA-157881157-1";
 
@@ -29,6 +30,7 @@ const App = () => {
       <AppCarousel></AppCarousel>
       <DomainDActivite></DomainDActivite>
       <Services></Services>
+      <Portfolio></Portfolio>
     </Fragment>
   );
 };

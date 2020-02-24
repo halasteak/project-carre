@@ -1,0 +1,36 @@
+/* .portfolio {
+  border: 1px solid gray;
+} */
+
+.portfolio .content h3 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 60px 0px -10px;
+}
+.portfolio .content h3 span {
+  background: #fff;
+  padding: 0 25px;
+  font-family: "Proza Libre";
+  font-weight: 900;
+}
+
+.portfolio-img-items{
+  margin-top: 50px;
+}
+
+/* #explore-section span {
+    font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 21px;
+      letter-spacing: 0px;
+      align-items: normal;
+      color: black;
+  } */
+
+/* .portfolio-gallery {
+  margin-right: 0;
+  margin-left: 0;
+} */
