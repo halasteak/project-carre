@@ -1,0 +1,115 @@
+/* .portfolio {
+  border: 1px solid gray;
+} */
+
+.portfolio .content h3 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 60px 0px -10px;
+}
+.portfolio .content h3 span {
+  background: #fff;
+  padding: 0 25px;
+  font-family: "Proza Libre";
+  font-weight: 900;
+}
+
+.portfolio-img-items{
+  margin-top: 50px;
+}
+
+// .gallery-img-block{
+// }
+.gallery-img-block *,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// .gallery-img-block ,
+// .overlay {
+//   text-align: center;
+//   color: black;
+
+//   font-family: "Open Sans";
+  
+//   font-weight: 700;
+  
+//   p{
+//       text-transform: uppercase;
+//       padding: 20px;
+    
+//       font-size: 20px;
+//       margin-left: 15px;
+//   }
+// }
+
+img,
+.overlay {
+  transition: .3s all;
+  border-radius: 3px;
+}
+
+
+.gallery-img-block {
+  float: left;
+  // max-width: 31%;
+  position: relative;
+  // margin: .5%;
+  img {
+    width: 100%;
+    margin-bottom: -4px;
+  }
+  .overlay {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+    // width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+    opacity: 0;
+    h3 {
+      padding-top: 20%;
+      font-family: "Open Sans";
+      text-align:center;
+    }
+    p {
+      font-family: 'Julius Sans One', sans-serif;
+      text-align:center;    
+      font-style: oblique;
+      padding-top: 23%;
+      font-size: 27px;
+
+    }
+  }
+  &:hover {
+    .overlay {
+      opacity: 1;
+    }
+    img {
+      -webkit-filter: blur(2px);
+      filter: blur(2px);
+    }
+  }
+}
+
+// @media screen and (max-width: 1148px) {
+//   .gallery-img-block {
+//     max-width: 48%;
+//     margin: 1%;
+//   }
+// }
+
+// @media screen and (max-width: 768px) {
+//   .gallery-img-block {
+//     float: none;
+//     max-width: 80%;
+//     margin: 1% auto;
+//   }
+// }

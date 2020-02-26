@@ -19,7 +19,7 @@ const App = () => {
   try {
     ReactGA.initialize(trackingId);
     ReactGA.pageview('/homepage');
-    console.log("ini ga with id ", trackingId);
+    //console.log("ini ga with id ", trackingId);
   } catch (e) {
     console.error("init analytics error", e);
   }

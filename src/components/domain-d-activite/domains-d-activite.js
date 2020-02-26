@@ -25,7 +25,7 @@ class DomainDActivite extends Component {
           <div className="col-md-2 col-lg-4"></div>
         </div>
 
-        <section id="explore-section" className="bg-light py-5">
+        <section id="explore-section" className="py-5">
           <div className="container">
             <div className="row">
               <div className="col-md-6">
@@ -49,7 +49,7 @@ class DomainDActivite extends Component {
           </div>
         </section>
 
-        <section id="explore-section" className="bg-light py-5">
+        <section id="explore-section" className="py-5">
           <div className="container">
             <div className="row ">
               <div className="col-md-6 float-sm-right">

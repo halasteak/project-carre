@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import "./portfolio.css";
-import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
-import ListGroupItem from "react-bootstrap/ListGroupItem";
+import "./portfolio.scss";
+import $ from 'jquery'; 
+
 import img1 from "./../../img/portfolio/Img1.svg";
 import img2 from "./../../img/portfolio/Img2.svg";
 import img3 from "./../../img/portfolio/Img3.svg";
@@ -16,45 +15,72 @@ import img10 from "./../../img/portfolio/Img10.svg";
 import img11 from "./../../img/portfolio/Img11.svg";
 import img12 from "./../../img/portfolio/Img12.svg";
 
+import Tooltip from "@material-ui/core/Tooltip";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
+
 class Portfolio extends Component {
   state = {};
   render() {
     const itemsPortfolio = [
       {
-        img: img1
+        img: img1,
+        hoverTitle: "Rénovation d'un appartement",
+        hoverSubTitle: "Résidentel"
       },
       {
-        img: img2
+        img: img2,
+        hoverTitle: "Rénovation d'un appartement",
+        hoverSubTitle: "Résidentel"
       },
       {
-        img: img3
+        img: img3,
+        hoverTitle: "Rénovation d'un appartement",
+        hoverSubTitle: "Résidentel"
       },
       {
-        img: img4
+        img: img4,
+        hoverTitle: "Rénovation d'un appartement",
+        hoverSubTitle: "Résidentel"
       },
       {
-        img: img5
+        img: img5,
+        hoverTitle: "Rénovation d'un appartement",
+        hoverSubTitle: "Résidentel"
       },
       {
-        img: img6
+        img: img6,
+        hoverTitle: "Rénovation d'un appartement",
+        hoverSubTitle: "Résidentel"
       },
       {
-        img: img7
+        img: img7,
+        hoverTitle: "Rénovation d'un appartement",
+        hoverSubTitle: "Résidentel"
       },
       {
-        img: img8
+        img: img8,
+        hoverTitle: "Rénovation d'un appartement",
+        hoverSubTitle: "Résidentel"
       },
       {
-        img: img9
+        img: img9,
+        hoverTitle: "Rénovation d'un appartement",
+        hoverSubTitle: "Résidentel"
       },
       {
-        img: img10
+        img: img10,
+        hoverTitle: "Rénovation d'un appartement",
+        hoverSubTitle: "Résidentel"
       },
       {
-        img: img11
+        img: img11,
+        hoverTitle: "Rénovation d'un appartement",
+        hoverSubTitle: "Résidentel"
       },
       {
-        img: img12
+        img: img12,
+        hoverTitle: "Rénovation d'un appartement",
+        hoverSubTitle: "Résidentel"
       }
     ];
 
@@ -73,10 +99,14 @@ class Portfolio extends Component {
       }
     });
 
-    const itemElem = (img, i) => (
-      <div className="col-md-3 sm-12" key={i}>
-        <a href="" data-toggle="lightbox">
-          <img src={img} alt="" className="img-fluid" />
+    const itemElem = (item, i) => (
+      <div className="col-md-3 gallery-img-block" key={i}>
+        <a href={item.img}  data-toggle="lightbox">
+          <img src={item.img} alt="" className="img-fluid" />
+          <div className="overlay">
+            <h3>{item.hoverTitle}</h3>
+            <p>{item.hoverSubTitle}</p>
+          </div>
         </a>
       </div>
     );
@@ -85,14 +115,14 @@ class Portfolio extends Component {
       return (
         <div className="row no-gutters" key={i}>
           {items.map((item, index) => {
-            return itemElem(item.img, index);
+            return itemElem(item, index);
           })}
         </div>
       );
     });
 
     return (
-      <div className="container portfolio">
+      <div className="portfolio">
         <div className="row domains-header">
           <div className="col-md-2 col-lg-2"></div>
           <div className="col-md-8 col-lg-8">
@@ -106,7 +136,6 @@ class Portfolio extends Component {
           </div>
           <div className="col-md-2 col-lg-2"></div>
         </div>
-
         <div className="portfolio-img-items">{itemsPortfolioWithData}</div>
       </div>
     );
