@@ -6,7 +6,6 @@ import ReactGA from "react-ga";
 // import auth from "./auth.ts"; // Sample authentication provider
 import AppCarousel from "../components/app-carousel";
 import DomainDActivite from "./domain-d-activite";
-import Services from "./app-services";
 import Portfolio from "./portfolio";
 import Contact from "./app-contact";
 
@@ -30,8 +29,8 @@ const App = () => {
       <AppHeader></AppHeader>
       <AppCarousel></AppCarousel>
       <DomainDActivite></DomainDActivite>
-      <Services></Services>
-      <Portfolio></Portfolio>
+      
+      <Portfolio></Portfolio> 
       <Contact></Contact>
     </Fragment>
   );

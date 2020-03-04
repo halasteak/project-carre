@@ -1,17 +1,17 @@
-.block-header .content h1 {
+.contact .block-header .content h1 {
   text-align: center;
   border-bottom: 1px solid #000;
   line-height: 0.1em;
   margin: 60px 0px -10px;
 }
-.block-header .content h1 span {
+.contact .block-header .content h1 span {
   background: #dedcdc;
   padding: 0 10px;
   font-family: "Proza Libre";
   font-weight: 700;
 }
 
-.block-header {
+.contact .block-header {
   font-family: "Open Sans";
   font-size: 20px;
   font-weight: 400;

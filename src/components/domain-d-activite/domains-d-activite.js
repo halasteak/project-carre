@@ -6,6 +6,8 @@ import ListGroupItem from "react-bootstrap/ListGroupItem";
 import ResidentielImg from "./../../img/domains/ResidentielImg.svg";
 import ComercialImg from "./../../img/domains/CommercialImg.svg";
 
+import Services from "./../app-services";
+
 class DomainDActivite extends Component {
   state = {};
   render() {
@@ -74,6 +76,8 @@ class DomainDActivite extends Component {
             </div>
           </div>
         </section>
+      
+        <Services></Services>
       </div>
     );
   }
